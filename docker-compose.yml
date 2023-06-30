@@ -1,0 +1,11 @@
+services:
+    bot:
+        build: .
+        container_name: tsd-discord-bot
+        restart: unless-stopped
+        environment:
+            - DISCORD_TOKEN=
+        volumes:
+            - log:/bot/log
+volumes:
+    log:
