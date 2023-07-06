@@ -5,7 +5,3 @@ services:
         restart: unless-stopped
         environment:
             - DISCORD_TOKEN=
-        volumes:
-            - log:/bot/log
-volumes:
-    log:

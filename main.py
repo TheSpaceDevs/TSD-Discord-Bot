@@ -6,7 +6,6 @@ from os import getenv
 from pathlib import Path
 
 logger = logging.basicConfig(
-    filename='log/tsd-bot.log',
     format='%(asctime)s : %(name)s - %(levelname)s - %(message)s',
     level=logging.WARNING
 )
