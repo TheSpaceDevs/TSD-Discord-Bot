@@ -23,6 +23,10 @@ class Publish(commands.Cog):
         if message.author == self.bot.user:
             return
 
+        # Check that the message is from a guild
+        if not message.guild:
+            return
+
         # Check if the channel is a news channel
         if message.channel.is_news():
             # Attempt to publish
