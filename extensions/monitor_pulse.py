@@ -13,7 +13,7 @@ class MonitorPulse(commands.Cog):
         # Start loop
         self.pulse.start()
 
-    @tasks.loop(minutes=1)
+    @tasks.loop(seconds=40)
     async def pulse(self):
         """
         Discord task for pulsing the TSD monitor
